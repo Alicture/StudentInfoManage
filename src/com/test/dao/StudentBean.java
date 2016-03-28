@@ -2,6 +2,11 @@ package com.test.dao;
 
 public class StudentBean
 {
+	public StudentBean()
+	{
+		super();
+		// TODO Auto-generated constructor stub
+	}
 	private int id;
 	private String username;
 	private String userpsw;

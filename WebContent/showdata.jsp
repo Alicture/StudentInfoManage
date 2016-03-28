@@ -1,3 +1,4 @@
+<%@page import="com.test.dao.StudentBean"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -35,7 +36,10 @@
 					<td><c:out value="${item.age }" /></td>
 					<td><c:out value="${item.weight }kg" /></td>
 					<td><c:out value="${item.sex }" /></td>
+				<td><a href="/LoginTest/DeleteServlet?id=${item.id }">删除</a></td>
+				<td><a href="/LoginTest/UpdateServlet?id=${item.id }">修改</a></td>
 				</tr>
+				
 				
 
 

@@ -80,8 +80,6 @@ public class RegisterServlet extends HttpServlet {
 		if(rs1)
 		{
 			response.sendRedirect("/LoginTest/login.jsp");
-			return;
-			
 		}
 		
 		
