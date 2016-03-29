@@ -77,7 +77,7 @@ public class RegisterServlet extends HttpServlet {
 			e.printStackTrace();
 		}
 		
-		if(rs1)
+		if(!rs1)
 		{
 			response.sendRedirect("/LoginTest/login.jsp");
 		}

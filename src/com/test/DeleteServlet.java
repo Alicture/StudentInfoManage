@@ -48,7 +48,7 @@ public class DeleteServlet extends HttpServlet {
 		String url = "jdbc:mysql://localhost:3306/demo";
 		Connection con =null;
 		Statement stmt =null;
-		boolean rs =true;
+		boolean rs =false;
 		
 		try
 		{
@@ -57,8 +57,12 @@ public class DeleteServlet extends HttpServlet {
 			String sql ="delete from userInfo where id="+request.getParameter("id")+"";
 			
 			rs=stmt.execute(sql);
-			if(rs==true)
+			
+			
+			
+			if(!rs)
 			{
+				
 				response.sendRedirect("/LoginTest/ShowUserinfoServlet");
 			}
 			

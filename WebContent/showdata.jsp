@@ -25,6 +25,7 @@
 				<td>age</td>
 				<td>weight</td>
 				<td>sex</td>
+				<td colspan="2">操作</td>
 			</tr>
 
 
